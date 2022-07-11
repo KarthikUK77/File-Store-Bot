@@ -67,13 +67,13 @@ I'm an HMTD Official File Store Bot Maintained by @HMTD_Links. I will Store File
 //DEFINING POP CALLBACK
 bot.action('POP',(ctx)=>{
     ctx.deleteMessage()
-    ctx.reply('<b>Send Me a File📂 Then See The Magic✨</b>')
+    ctx.reply(`<b>Send Me a File📂 Then See The Magic✨</b>`)
 })
 
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
+    ctx.reply(`<b>Hello</b> <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
