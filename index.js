@@ -36,7 +36,7 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>I will store files for you and give sharable links .I can also make the files available for all users</b>`,{
+        ctx.reply(`<b>I'm HMTD Official File Store Bot V3 Maintains By @HMTD_Links. I will store files for you and give sharable links.</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
@@ -76,12 +76,12 @@ bot.command('/help',(ctx)=>{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'🎲Clone',url:'t.me/filesaverhelp'}]
+                [{text:'Feedback',url:'t.me/HMTD_Feedback_Bot'}]
             ]
         }    
     })
     if(ctx.from.id==process.env.ADMIN){
-        ctx.reply('https://telegra.ph/Filesaver-Admin-commands-06-05')
+        ctx.reply('https://t.me/HMTD_Links')
     }
 })
 
@@ -307,7 +307,7 @@ bot.on('audio', async(ctx) => {
 bot.command('stats',async(ctx)=>{
     stats = await saver.getUser().then((res)=>{
         if(ctx.from.id==process.env.ADMIN){
-            ctx.reply(`📊Total user: <b> ${res.length}</b>`,{parse_mode:'HTML'})
+            ctx.reply(`📊Total Subscribers: <b> ${res.length}</b>`,{parse_mode:'HTML'})
         }
         
     })
